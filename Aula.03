@@ -1,0 +1,78 @@
+#https://github.com/labbces/cen0485/blob/main/bioinfo.md
+
+   47  cd
+   48  mv ~/Downloads/file1.tar.gz ~/
+   49  tar xvzf file1.tar.gz
+   50  mv ~/Downloads/file1.tar.gz ~/
+   51  cd
+   52  mv ~/Downloads/file1.tar.gz ~/
+   53  tar xvzf file1.tar.gz
+   54  cd
+   55  cd ~/dia1
+   56  gunzip TAIR10_pep_20101214_updated.fasta.gz 
+   57  wc -l TAIR10_pep_20101214_updated.fasta 
+   58  wc TAIR10_pep_20101214_updated.fasta 
+   59  ls -l -h TAIR10_pep_20101214_updated.fasta
+   60  head TAIR10_pep_20101214_updated.fasta
+   61  tail TAIR10_pep_20101214_updated.fasta
+   62  grep ">" TAIR10_pep_20101214_updated.fasta
+   63  wc >*
+   64  wc grep ">" TAIR10_pep_20101214_updated.fasta
+   65  wc -l | grep ">" TAIR10_pep_20101214_updated.fasta
+   66  grep ">" TAIR10_pep_20101214_updated.fasta
+   67  grep ">" TAIR10_pep_20101214_updated.fasta | head -n 4
+   68  history 
+   69  47
+   70  cd
+   71  mv ~/Downloads/file1.tar.gz ~/
+   72  cd
+   73  mv ~/Downloads/file1.tar.gz ~/
+   74  tar xvzf file1.tar.gz
+   75  cd 
+   76  cd ~/dia1
+   77  gunzip TAIR10_pep_20101214_updated.fasta.gz
+   78  wc -l TAIR10_pep_20101214_updated.fasta
+   79  ls -l -h TAIR10_pep_20101214_updated.fasta
+   80  head TAIR10_pep_20101214_updated.fasta
+   81  tail TAIR10_pep_20101214_updated.fasta
+   82  grep ">" TAIR10_pep_20101214_updated.fasta
+   83  grep ">" TAIR10_pep_20101214_updated.fasta | wc -l
+   84  head TAIR10_pep_20101214_updated.fasta
+   85  tail TAIR10_pep_20101214_updated.fasta
+   86  grep ">AT*G*" TAIR10_pep_20101214_updated.fasta | wc -l
+   87  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d"" -f1
+   88  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d' ' -f1
+   89  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d' ' -f1 | wc -1
+   90  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d' ' -f1 | wc -l
+   91  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d' ' -f1 | sort -u
+   92  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d' ' -f1 | sort -u | wc -l
+   93  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort -u | wc -l
+   94  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort -u 
+   95  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort -u | wc -l
+   96  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c
+   97  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | sort
+   98  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | head
+   99  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | sort | tail
+  100  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | sort -i | head
+  101  main sort
+  102  man sort
+  103  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | sort -n | head
+  104  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | sort -n | tail
+  105  grep ">AT4G32850" TAIR10_pep_20101214_updated.fasta 
+  106  sed 's/>/>ATH_/' TAIR10_pep_20101214_updated.fasta > TAIR10_pep_20101214_updated.mod.fasta
+  107  TAIR10_pep_20101214_updated.mod.fasta
+  108  head TAIR10_pep_20101214_updated.mod.fasta
+  109  head TAIR10_pep_20101214_updated.fasta
+  110  sed 's/>/>ATH_/' TAIR10_pep_20101214_updated.fasta > TAIR10_pep_20101214_updated.mod.fasta
+  111* 
+  112  sed 's/>/>ATH_/' TAIR10_pep_20101214_updated.fasta
+  113  sed 's/>/>ATH_/' TAIR10_pep_20101214_updated.fasta > TAIR10_pep_20101214_updated.mod.fasta
+  114  sed -r 's/ | .*$//' TAIR10_pep_20101214_updated.mod.fasta
+  115  man sed
+  116  sed -r 's/ | .*$//' TAIR10_pep_20101214_updated.mod.fasta > TAIR10_pep_20101214_updated.mod2.fasta
+  117  head TAIR10_pep_20101214_updated.fasta
+  118  head TAIR10_pep_20101214_updated.mod.fasta
+  119  head TAIR10_pep_20101214_updated.mod2.fasta
+  120  sed -r 's/ /| .*$//' TAIR10_pep_20101214_updated.mod.fasta
+  121  sed -r 's/ | .*$//' TAIR10_pep_20101214_updated.mod.fasta
+  122  history
