@@ -1,0 +1,516 @@
+(base) cen0485@pg-sala017:~$ ^C
+(base) cen0485@pg-sala017:~$ conda activate emboss
+(emboss) cen0485@pg-sala017:~$ conda deactivate
+(base) cen0485@pg-sala017:~$ embossdata EPAM250
+Comando 'embossdata' não encontrado, mas poder ser instalado com:
+sudo apt install emboss
+(base) cen0485@pg-sala017:~$ conda activate emboss
+(emboss) cen0485@pg-sala017:~$ embossdata EPAM250
+Find and retrieve EMBOSS data files
+# The following directories can contain EMBOSS data files.
+# They are searched in the following order until the file is found.
+# If the directory does not exist, then this is noted below.
+# '.' is the UNIX name for your current working directory.
+
+File ./EPAM250                                                    Does not exist
+File .embossdata/EPAM250                                          Does not exist
+File /home/cen0485/EPAM250                                        Does not exist
+File /home/cen0485/.embossdata/EPAM250                            Does not exist
+File /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/dat Exists
+(emboss) cen0485@pg-sala017:~$ less /usr/share/EMBOSS/data/EPAM250 
+/usr/share/EMBOSS/data/EPAM250: Arquivo ou diretório inexistente
+(emboss) cen0485@pg-sala017:~$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ^C
+(emboss) cen0485@pg-sala017:~$ ls
+'Área de Trabalho'   dia2         Downloads      files     miniconda3   Música    R      Vídeos
+ dia1                Documentos   file1.tar.gz   Imagens   Modelos      Público   snap
+(emboss) cen0485@pg-sala017:~$ cd Downloads/
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ^B^C
+(emboss) cen0485@pg-sala017:~/Downloads$ ls
+ ANAC092_cDNA.fa.fast                     'cen0485_bioinfo.md at main · labbces_cen0485.pdf'
+ ANAC092_genomic.fasta                    'Design sem nome (1).png'
+ bioinfo.md                               'Design sem nome.png'
+ Bioinformática.html                       esalq_port.svg
+ Bioinformática.Rmd                        files
+'CEN0485-Aula 01 - Intro.pptx'             GruposRelatorios-CEN04852024101.xlsx
+'CEN0485-Aula 03 - Bancos de dados.pptx'   logo_completo.svg
+'CEN0485-Aula 05 - CompSeqs I.pptx'        nnn_arquivos
+'CEN0485-Aula 06 - CompSeqs II.pptx'       nnn.html
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ^C
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ANAC092_cDNA.fa.fast 
+Second sequence(s):  ANAC092_genomic.fast     
+Error: Failed to open filename 'ANAC092_genomic.fast'
+Error: Unable to read sequence 'ANAC092_genomic.fast'
+Second sequence(s): ls
+Error: Failed to open filename 'ls'
+Error: Unable to read sequence 'ls'
+Died: needle terminated: Bad value for '-bsequence' and no more retries
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ^C
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ANAC092_cDNA.fa.fast
+Second sequence(s): ANAC092_genomic.fast
+Gap opening penalty [10.0]: -6
+Warning: floating point value out of range -6.000 less than (reset to) 0.000
+Gap extension penalty [0.5]: 5
+Output alignment [anac092_cdna.needle]: 5
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ANACO92_cDNA.fa.fast
+Error: Failed to open filename 'ANACO92_cDNA.fa.fast'
+Error: Unable to read sequence 'ANACO92_cDNA.fa.fast'
+Input sequence: ANAC092_cDNA.fa.fast 
+Second sequence(s): 
+Error: Failed to open filename ''
+Error: Unable to read sequence ''
+Second sequence(s): 
+Error: Failed to open filename ''
+Error: Unable to read sequence ''
+Died: needle terminated: Bad value for '-bsequence' and no more retries
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ANACO92_cDNA.fa.fast
+Error: Failed to open filename 'ANACO92_cDNA.fa.fast'
+Error: Unable to read sequence 'ANACO92_cDNA.fa.fast'
+Input sequence: ^C
+(emboss) cen0485@pg-sala017:~/Downloads$ ls
+ 5                                        'CEN0485-Aula 06 - CompSeqs II.pptx'
+ ANAC092_cDNA.fa.fast                     'cen0485_bioinfo.md at main · labbces_cen0485.pdf'
+ ANAC092_genomic.fast                     'Design sem nome (1).png'
+ ANAC092_genomic.fasta                    'Design sem nome.png'
+ bioinfo.md                                esalq_port.svg
+ Bioinformática.html                       files
+ Bioinformática.Rmd                        GruposRelatorios-CEN04852024101.xlsx
+'CEN0485-Aula 01 - Intro.pptx'             logo_completo.svg
+'CEN0485-Aula 03 - Bancos de dados.pptx'   nnn_arquivos
+'CEN0485-Aula 05 - CompSeqs I.pptx'        nnn.html
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ANAC092_cDNA.fa.fast
+Second sequence(s): ANAC092_genomic.fast
+Gap opening penalty [10.0]: -6
+Warning: floating point value out of range -6.000 less than (reset to) 0.000
+Gap extension penalty [0.5]: -2
+Warning: floating point value out of range -2.000 less than (reset to) 0.000
+Output alignment [anac092_cdna.needle]: testealing
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ANAC092_cDNA.fa.fast
+Second sequence(s): ANAC092_genomic.fast
+Gap opening penalty [10.0]: -6
+Warning: floating point value out of range -6.000 less than (reset to) 0.000
+Gap extension penalty [0.5]: -2
+Warning: floating point value out of range -2.000 less than (reset to) 0.000
+Output alignment [anac092_cdna.needle]: anac092_cdna.needle
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ANAC092_cDNA.fa.fast
+Second sequence(s): ANAC092_genomic.fast
+Gap opening penalty [10.0]: 6
+Gap extension penalty [0.5]: 2
+Output alignment [anac092_cdna.needle]: anac092_cdna.needle
+(emboss) cen0485@pg-sala017:~/Downloads$ /usr/share/EMBOSS/data/EDNAFULL
+bash: /usr/share/EMBOSS/data/EDNAFULL: Arquivo ou diretório inexistente
+(emboss) cen0485@pg-sala017:~/Downloads$ less /usr/share/EMBOSS/data/EDNAFULL
+/usr/share/EMBOSS/data/EDNAFULL: Arquivo ou diretório inexistente
+(emboss) cen0485@pg-sala017:~/Downloads$ less /usr/share/EMBOSS/data/EPAM250
+/usr/share/EMBOSS/data/EPAM250: Arquivo ou diretório inexistente
+(emboss) cen0485@pg-sala017:~/Downloads$ embossdata EPAM250
+Find and retrieve EMBOSS data files
+# The following directories can contain EMBOSS data files.
+# They are searched in the following order until the file is found.
+# If the directory does not exist, then this is noted below.
+# '.' is the UNIX name for your current working directory.
+
+File ./EPAM250                                                    Does not exist
+File .embossdata/EPAM250                                          Does not exist
+File /home/cen0485/EPAM250                                        Does not exist
+File /home/cen0485/.embossdata/EPAM250                            Does not exist
+File /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/dat Exists
+(emboss) cen0485@pg-sala017:~/Downloads$ less /usr/share/EMBOSS/data/EPAM250 
+/usr/share/EMBOSS/data/EPAM250: Arquivo ou diretório inexistente
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ANAC092_cDNA.fa.fast
+Second sequence(s): ANAC092_genomic.fast
+Gap opening penalty [10.0]: 6
+Gap extension penalty [0.5]: 2
+Output alignment [anac092_cdna.needle]: anac092_cdna.needle
+(emboss) cen0485@pg-sala017:~/Downloads$ less /usr/share/EMBOSS/data/EPAM250 
+/usr/share/EMBOSS/data/EPAM250: Arquivo ou diretório inexistente
+(emboss) cen0485@pg-sala017:~/Downloads$ embossdata EPAM250
+Find and retrieve EMBOSS data files
+# The following directories can contain EMBOSS data files.
+# They are searched in the following order until the file is found.
+# If the directory does not exist, then this is noted below.
+# '.' is the UNIX name for your current working directory.
+
+File ./EPAM250                                                    Does not exist
+File .embossdata/EPAM250                                          Does not exist
+File /home/cen0485/EPAM250                                        Does not exist
+File /home/cen0485/.embossdata/EPAM250                            Does not exist
+File /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/dat Exists
+(emboss) cen0485@pg-sala017:~/Downloads$ LS
+LS: comando não encontrado
+(emboss) cen0485@pg-sala017:~/Downloads$ ls
+ 5                                        'CEN0485-Aula 06 - CompSeqs II.pptx'
+ ANAC092_cDNA.fa.fast                     'cen0485_bioinfo.md at main · labbces_cen0485.pdf'
+ anac092_cdna.needle                      'Design sem nome (1).png'
+ ANAC092_genomic.fast                     'Design sem nome.png'
+ ANAC092_genomic.fasta                     esalq_port.svg
+ bioinfo.md                                files
+ Bioinformática.html                       GruposRelatorios-CEN04852024101.xlsx
+ Bioinformática.Rmd                        logo_completo.svg
+'CEN0485-Aula 01 - Intro.pptx'             nnn_arquivos
+'CEN0485-Aula 03 - Bancos de dados.pptx'   nnn.html
+'CEN0485-Aula 05 - CompSeqs I.pptx'
+(emboss) cen0485@pg-sala017:~/Downloads$ emboss data
+Comando 'emboss' não encontrado, você quis dizer:
+  comando 'jemboss' do deb jemboss (6.6.0+dfsg-11ubuntu1)
+Experimente: sudo apt install <deb name>
+(emboss) cen0485@pg-sala017:~/Downloads$ less /usr/share/EMBOSS/data
+/usr/share/EMBOSS/data: Arquivo ou diretório inexistente
+(emboss) cen0485@pg-sala017:~/Downloads$ ls /usr/share/EMBOSS/data
+ls: não foi possível acessar '/usr/share/EMBOSS/data': Arquivo ou diretório inexistente
+(emboss) cen0485@pg-sala017:~/Downloads$ ls /usr/share/EMBOSS
+ls: não foi possível acessar '/usr/share/EMBOSS': Arquivo ou diretório inexistente
+(emboss) cen0485@pg-sala017:~/Downloads$ ls /usr/share/
+Display all 274 possibilities? (y or n)
+(emboss) cen0485@pg-sala017:~/Downloads$ ls /usr/share/
+Display all 274 possibilities? (y or n)
+accountsservice/                gnome-mahjongg/                 openvpn/
+aclocal/                        gnome-mines/                    orca/
+aclocal-1.16/                   gnome-remote-desktop/           org.gnome.Characters/
+acpi-support/                   gnome-session/                  os-prober/
+adduser/                        gnome-settings-daemon/          p11-kit/
+aisleriot/                      gnome-shell/                    package-data-downloads/
+alsa/                           gnome-system-monitor/           PackageKit/
+alsa-base/                      gnome-todo/                     pam/
+alsa-card-profile/              gnome-video-effects/            pam-configs/
+appdata/                        gnupg/                          pandoc/
+applications/                   goa-1.0/                        perl/
+apport/                         grilo-plugins/                  perl5/
+apturl/                         groff/                          perl-openssl-defaults/
+aspell/                         grub/                           pipewire/
+autoconf/                       grub-gfxpayload-lists/          pixmaps/
+automake-1.16/                  gst-plugins-base/               pkgconfig/
+avahi/                          gstreamer-1.0/                  pkg-config-crosswrapper
+backgrounds/                    gtk-4.0/                        pkg-config-dpkghook
+base-files/                     gtk-doc/                        plymouth/
+base-passwd/                    gtk-engines/                    pnm2ppa/
+bash-completion/                gtksourceview-2.0/              polkit-1/
+binfmts/                        gtksourceview-3.0/              poppler/
+branding/                       gtksourceview-4/                ppd/
+brltty/                         guile/                          ppp/
+bug/                            gupnp-av/                       proj/
+build-essential/                gupnp-dlna-2.0/                 publicsuffix/
+ca-certificates/                gvfs/                           pulseaudio/
+cmake/                          help/                           pyshared/
+cogl/                           help-langpack/                  python3/
+color/                          hplip/                          python-apt/
+colord/                         hunspell/                       R/
+common-licenses/                hyphen/                         readline/
+consolefonts/                   i18n/                           remmina/
+console-setup/                  ibus/                           rhythmbox/
+consoletrans/                   ibus-table/                     rsync/
+cups/                           icons/                          rsyslog/
+dbus-1/                         icu/                            rygel/
+dconf/                          im-config/                      seahorse/
+debconf/                        info/                           secureboot/
+debhelper/                      initramfs-tools/                sensible-utils/
+debianutils/                    installed-tests/                session-migration/
+defaults/                       ipp-usb/                        sgml/
+desktop-directories/            iptables/                       sgml-base/
+dict/                           iso-codes/                      sgml-data/
+dictionaries-common/            java/                           snmp/
+distro-info/                    kde4/                           software-properties/
+djvu/                           keyrings/                       sounds/
+dns/                            language-selector/              source-highlight/
+dnsmasq-base/                   language-support/               speech-dispatcher/
+doc/                            language-tools/                 ssl-cert/
+doc-base/                       libc-bin/                       system-config-printer/
+dpkg/                           libdebuginfod-common/           systemd/
+drirc.d/                        libdrm/                         tabset/
+emacs/                          libexttextcat/                  tcltk/
+--More--^C
+(emboss) cen0485@pg-sala017:~/Downloads$ embossdata EDNAFULL
+Find and retrieve EMBOSS data files
+# The following directories can contain EMBOSS data files.
+# They are searched in the following order until the file is found.
+# If the directory does not exist, then this is noted below.
+# '.' is the UNIX name for your current working directory.
+
+File ./EDNAFULL                                                   Does not exist
+File .embossdata/EDNAFULL                                         Does not exist
+File /home/cen0485/EDNAFULL                                       Does not exist
+File /home/cen0485/.embossdata/EDNAFULL                           Does not exist
+File /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/dat Exists
+(emboss) cen0485@pg-sala017:~/Downloads$ /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/dat/anac092_cdna.needle
+bash: /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/dat/anac092_cdna.needle: Arquivo ou diretório inexistente
+(emboss) cen0485@pg-sala017:~/Downloads$ ls /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/data/EDNAFULL
+/home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/data/EDNAFULL
+(emboss) cen0485@pg-sala017:~/Downloads$ less /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/data/EDNAFULL
+(emboss) cen0485@pg-sala017:~/Downloads$ 
+(emboss) cen0485@pg-sala017:~/Downloads$ ls
+ 5                                        'CEN0485-Aula 06 - CompSeqs II.pptx'
+ ANAC092_cDNA.fa.fast                     'cen0485_bioinfo.md at main · labbces_cen0485.pdf'
+ anac092_cdna.needle                      'Design sem nome (1).png'
+ ANAC092_genomic.fast                     'Design sem nome.png'
+ ANAC092_genomic.fasta                     esalq_port.svg
+ ANAC092_pep.fast                          files
+ bioinfo.md                                GruposRelatorios-CEN04852024101.xlsx
+ Bioinformática.html                       logo_completo.svg
+ Bioinformática.Rmd                        nnn_arquivos
+'CEN0485-Aula 01 - Intro.pptx'             nnn.html
+'CEN0485-Aula 03 - Bancos de dados.pptx'   Pp3c6_27690.functionalAnnotations.tsv
+'CEN0485-Aula 05 - CompSeqs I.pptx'
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ANAC092_pep.fast
+Second sequence(s): protein.fast
+Gap opening penalty [10.0]: 6
+Gap extension penalty [0.5]: 2
+Output alignment [d7mjk1.needle]: d7mjk1.needle
+(emboss) cen0485@pg-sala017:~/Downloads$ water
+Smith-Waterman local alignment of sequences
+Input sequence: ANAC092_pep.fast
+Second sequence(s): protein.fast
+Gap opening penalty [10.0]: 6
+Gap extension penalty [0.5]: 2
+Output alignment [d7mjk1.water]: d7mjk1.water
+(emboss) cen0485@pg-sala017:~/Downloads$ d7mjk1.water
+d7mjk1.water: comando não encontrado
+(emboss) cen0485@pg-sala017:~/Downloads$ less d7mjk1.water
+(emboss) cen0485@pg-sala017:~/Downloads$ shuffleseq
+Shuffle a set of sequences maintaining composition
+Input sequence(s): ANAC092_pep.fast
+output sequence(s) [d7mjk1.fasta]: d7mjk1.fast 
+(emboss) cen0485@pg-sala017:~/Downloads$ needle
+Needleman-Wunsch global alignment of two sequences
+Input sequence: ANAC092_pep.fast
+Second sequence(s): d7mjk1.fast
+Gap opening penalty [10.0]: 6
+Gap extension penalty [0.5]: 2
+Output alignment [d7mjk1.needle]: d7mjk1.needle
+(emboss) cen0485@pg-sala017:~/Downloads$ water
+Smith-Waterman local alignment of sequences
+Input sequence: ANAC092_pep.fast
+Second sequence(s): d7mjk1.fast
+Gap opening penalty [10.0]: 6
+Gap extension penalty [0.5]: 2
+Output alignment [d7mjk1.water]: d7mjk1.water
+(emboss) cen0485@pg-sala017:~/Downloads$ less d7mjk1.water
+(emboss) cen0485@pg-sala017:~/Downloads$ less d7mjk1.needle 
+(emboss) cen0485@pg-sala017:~/Downloads$ history
+    1  gsettings set org.gnome.desktop.background picture-uri file:////usr/share/backgrounds/FondoCENA.png
+    2  mkdir -p ~/miniconda3
+    3  wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh -O ~/miniconda3/miniconda.sh
+    4  bash ~/miniconda3/miniconda.sh -b -u -p ~/miniconda3
+    5  rm -rf ~/miniconda3/miniconda.sh
+    6  ~/miniconda3/bin/conda init bash
+    7  exit
+    8  conda config --add channels conda-forge
+    9  conda config --add channels bioconda
+   10  conda create -y -n emboss -c bioconda emboss
+   11  conda create -y -n blast -c bioconda blast
+   12  conda create -y -n flye -c bioconda flye
+   13  conda create -y -n hifiasm -c bioconda hifiasm
+   14  conda create -y -n bandage -c bioconda bandage
+   15  conda create -y -n quast -c bioconda quast
+   16  conda create -y -n genomescope2 -c bioconda genomescope2
+   17  conda activate genomescope2
+   18  R -e 'install.packages("viridis", repos="https://brieger.esalq.usp.br/CRAN/")'
+   19  conda deactivate
+   20  conda create -y -n redotable -c bioconda java-jdk
+   21  conda activate redotable
+   22  wget https://www.bioinformatics.babraham.ac.uk/projects/redotable/redotable_v1.2.zip
+   23  unzip redotable_v1.2.zip
+   24  cd redotable
+   25  mv redotable ~/miniconda3/envs/redotable/bin/
+   26  mv uk/ ~/miniconda3/envs/redotable/bin/
+   27  cd ..
+   28  rm redotable_v1.2.zip
+   29  rm -rf redotable
+   30  conda deactivate
+   31  conda create -y -n fastqc -c bioconda fastqc
+   32  conda create -y -n bbmap -c bioconda bbmap
+   33  conda create -y -n sratoolkit -c bioconda sra-tools
+   34  conda create -y -n tidk -c bioconda tidk
+   35  conda create -y -n compleasm -c conda-forge -c bioconda compleasm
+   36  conda create -y -n merqury -c bioconda merqury
+   37  conda create -y -n jupiterplot -c bioconda circos samtools minimap2
+   38  conda create -y -n singularitycew -c wallaulab singularityce
+   39  ln -s /usr/bin/mksquashfs /usr/local/bin/
+   40  ln -s /usr/bin/unsquashfs /usr/local/bin/
+   41  conda create -y -n igv -c bioconda igv
+   42  conda create -y -n eggnogmapper -c bioconda -c conda-forge eggnog-mapper
+   43  gsettings set org.gnome.desktop.background picture-uri file:////usr/share/backgrounds/FondoCENA.png
+   44  google-chrome
+   45  cd
+   46  mv ~/Downloads/file1.tar.gz ~/
+   47  cd
+   48  mv ~/Downloads/file1.tar.gz ~/
+   49  tar xvzf file1.tar.gz
+   50  mv ~/Downloads/file1.tar.gz ~/
+   51  cd
+   52  mv ~/Downloads/file1.tar.gz ~/
+   53  tar xvzf file1.tar.gz
+   54  cd
+   55  cd ~/dia1
+   56  gunzip TAIR10_pep_20101214_updated.fasta.gz 
+   57  wc -l TAIR10_pep_20101214_updated.fasta 
+   58  wc TAIR10_pep_20101214_updated.fasta 
+   59  ls -l -h TAIR10_pep_20101214_updated.fasta
+   60  head TAIR10_pep_20101214_updated.fasta
+   61  tail TAIR10_pep_20101214_updated.fasta
+   62  grep ">" TAIR10_pep_20101214_updated.fasta
+   63  wc >*
+   64  wc grep ">" TAIR10_pep_20101214_updated.fasta
+   65  wc -l | grep ">" TAIR10_pep_20101214_updated.fasta
+   66  grep ">" TAIR10_pep_20101214_updated.fasta
+   67  grep ">" TAIR10_pep_20101214_updated.fasta | head -n 4
+   68  history 
+   69  47
+   70  cd
+   71  mv ~/Downloads/file1.tar.gz ~/
+   72  cd
+   73  mv ~/Downloads/file1.tar.gz ~/
+   74  tar xvzf file1.tar.gz
+   75  cd 
+   76  cd ~/dia1
+   77  gunzip TAIR10_pep_20101214_updated.fasta.gz
+   78  wc -l TAIR10_pep_20101214_updated.fasta
+   79  ls -l -h TAIR10_pep_20101214_updated.fasta
+   80  head TAIR10_pep_20101214_updated.fasta
+   81  tail TAIR10_pep_20101214_updated.fasta
+   82  grep ">" TAIR10_pep_20101214_updated.fasta
+   83  grep ">" TAIR10_pep_20101214_updated.fasta | wc -l
+   84  head TAIR10_pep_20101214_updated.fasta
+   85  tail TAIR10_pep_20101214_updated.fasta
+   86  grep ">AT*G*" TAIR10_pep_20101214_updated.fasta | wc -l
+   87  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d"" -f1
+   88  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d' ' -f1
+   89  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d' ' -f1 | wc -1
+   90  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d' ' -f1 | wc -l
+   91  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d' ' -f1 | sort -u
+   92  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d' ' -f1 | sort -u | wc -l
+   93  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort -u | wc -l
+   94  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort -u 
+   95  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort -u | wc -l
+   96  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c
+   97  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | sort
+   98  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | head
+   99  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | sort | tail
+  100  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | sort -i | head
+  101  main sort
+  102  man sort
+  103  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | sort -n | head
+  104  grep ">" TAIR10_pep_20101214_updated.fasta | cut -d'.' -f1 | sort |uniq -c | sort -n | tail
+  105  grep ">AT4G32850" TAIR10_pep_20101214_updated.fasta 
+  106  sed 's/>/>ATH_/' TAIR10_pep_20101214_updated.fasta > TAIR10_pep_20101214_updated.mod.fasta
+  107  TAIR10_pep_20101214_updated.mod.fasta
+  108  head TAIR10_pep_20101214_updated.mod.fasta
+  109  head TAIR10_pep_20101214_updated.fasta
+  110  sed 's/>/>ATH_/' TAIR10_pep_20101214_updated.fasta > TAIR10_pep_20101214_updated.mod.fasta
+  111  sed 's/>/>ATH_/' TAIR10_pep_20101214_updated.fasta
+  112  sed 's/>/>ATH_/' TAIR10_pep_20101214_updated.fasta > TAIR10_pep_20101214_updated.mod.fasta
+  113  sed -r 's/ | .*$//' TAIR10_pep_20101214_updated.mod.fasta
+  114  man sed
+  115  sed -r 's/ | .*$//' TAIR10_pep_20101214_updated.mod.fasta > TAIR10_pep_20101214_updated.mod2.fasta
+  116  head TAIR10_pep_20101214_updated.fasta
+  117  head TAIR10_pep_20101214_updated.mod.fasta
+  118  head TAIR10_pep_20101214_updated.mod2.fasta
+  119  sed -r 's/ /| .*$//' TAIR10_pep_20101214_updated.mod.fasta
+  120  sed -r 's/ | .*$//' TAIR10_pep_20101214_updated.mod.fasta
+  121  history
+  122  man history
+  123  cd ..
+  124  ip o
+  125  ip a
+  126  ls
+  127  cd cen0485/
+  128  ls
+  129  cd Downloads/
+  130  scq cen0485*.pdf cen0485@192.168.112.6:~/downloads/
+  131  scp cen0485*.pdf cen0485@192.168.112.6:~/downloads/
+  132  wget https://www.uniprot.org/uniprot/D7MJK1.txt
+  133  scp -r files  cen0485@192.168.112.71:~/Downloads/
+  134  scp -r files  cen0485@192.168.112.61:~/Downloads/
+  135  scp -r files  cen0485@192.168.112.36:~/Downloads/
+  136  scp -r files  cen0485@192.168.112.150:~/Downloads/
+  137  scp -r files  cen0485@192.168.112.130:~/Downloads/
+  138  conda activate emboss
+  139  conda deactivate
+  140  conda activate emboss
+  141  wossname
+  142  man
+  143  man seqret
+  144  man emboss
+  145  man man
+  146  man seqret
+  147  tfm
+  148  cd files/
+  149  man cp
+  150  ls
+  151  seqret ANAC092_cDNA.fa ~/files
+  152  cp  ANAC092_cDNA.fa ~/files
+  153  conda activate redotable
+  154  conda activate redotable
+  155  redotable
+  156  conda activate redotable
+  157  redotable
+  158  sudo chmod a+x /home/cen0485/miniconda3/envs/redotable/bin/redotable
+  159  conda activate redotable
+  160  redotable
+  161  conda activate emboss
+  162  conda deactivate
+  163  embossdata EPAM250
+  164  conda activate emboss
+  165  embossdata EPAM250
+  166  less /usr/share/EMBOSS/data/EPAM250 
+  167  needle
+  168  ls
+  169  cd Downloads/
+  170  needle
+  171  ls
+  172  needle
+  173  ls
+  174  needle
+  175  /usr/share/EMBOSS/data/EDNAFULL
+  176  less /usr/share/EMBOSS/data/EDNAFULL
+  177  less /usr/share/EMBOSS/data/EPAM250
+  178  embossdata EPAM250
+  179  less /usr/share/EMBOSS/data/EPAM250 
+  180  needle
+  181  less /usr/share/EMBOSS/data/EPAM250 
+  182  embossdata EPAM250
+  183  LS
+  184  ls
+  185  emboss data
+  186  less /usr/share/EMBOSS/data
+  187  ls /usr/share/EMBOSS/data
+  188  ls /usr/share/EMBOSS
+  189  embossdata EDNAFULL
+  190  /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/dat/anac092_cdna.needle
+  191  ls /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/data/EDNAFULL
+  192  less /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/data/EDNAFULL
+  193  ls
+  194  needle
+  195  water
+  196  d7mjk1.water
+  197  less d7mjk1.water
+  198  shuffleseq
+  199  needle
+  200  water
+  201  less d7mjk1.water
+  202  less d7mjk1.needle 
+  203  history
