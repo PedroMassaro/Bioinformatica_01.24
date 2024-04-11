@@ -1,0 +1,43 @@
+  161  conda activate emboss
+  162  conda deactivate
+  163  embossdata EPAM250
+  164  conda activate emboss
+  165  embossdata EPAM250
+  166  less /usr/share/EMBOSS/data/EPAM250 
+  167  needle
+  168  ls
+  169  cd Downloads/
+  170  needle
+  171  ls
+  172  needle
+  173  ls
+  174  needle
+  175  /usr/share/EMBOSS/data/EDNAFULL
+  176  less /usr/share/EMBOSS/data/EDNAFULL
+  177  less /usr/share/EMBOSS/data/EPAM250
+  178  embossdata EPAM250
+  179  less /usr/share/EMBOSS/data/EPAM250 
+  180  needle
+  181  less /usr/share/EMBOSS/data/EPAM250 
+  182  embossdata EPAM250
+  183  LS
+  184  ls
+  185  emboss data
+  186  less /usr/share/EMBOSS/data
+  187  ls /usr/share/EMBOSS/data
+  188  ls /usr/share/EMBOSS
+  189  embossdata EDNAFULL
+  190  /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/dat/anac092_cdna.needle
+  191  ls /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/data/EDNAFULL
+  192  less /home/cen0485/miniconda3/envs/emboss/bin/../share/EMBOSS/data/EDNAFULL
+  193  ls
+  194  needle
+  195  water
+  196  d7mjk1.water
+  197  less d7mjk1.water
+  198  shuffleseq
+  199  needle
+  200  water
+  201  less d7mjk1.water
+  202  less d7mjk1.needle 
+  203  history
