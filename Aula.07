@@ -1,0 +1,76 @@
+  207  conda activate compseqiii 
+  208  cd
+  209  mkdir trim5alpha
+  210  cd trim5alpha
+  211  wget https://raw.githubusercontent.com/labbces/cen0485/main/files/primatesAA.fasta
+  212  less trim5alpha
+  213  less primatesAA.fasta 
+  214  grep ">" primatesAA.fasta 
+  215  grep ">" primatesAA.fasta -wc
+  216  grep ">" primatesAA.fasta -cw
+  217  grep ">" primatesAA.fasta -count
+  218  grep ">" primatesAA.fasta |wc -l
+  219  grep -c  ">" primatesAA.fasta 
+  220  less primatesAA.fasta 
+  221  muscle -align primatesAA.fasta -output primatesAA_muscle.afa
+  222  les primatesAA_muscle.afa 
+  223  less primatesAA_muscle.afa 
+  224  jalview primatesAA_muscle.afa
+  225  conda emboss
+  226  jalview primatesAA_muscle.afa
+  227  less primatesAA
+  228  less primatesAA.fasta 
+  229  jalview primatesAA_muscle.afa
+  230  infoseq primatesAA.fasta 
+  231  conda emboss
+  232  conda actitevi emboss
+  233  activate emboss
+  234  conda activate emboss
+  235  infoseq primatesAA.fasta 
+  236  infoseq primatesAA_
+  237  infoseq primatesAA_muscle.afa 
+  238  jalview primatesAA_muscle.afa
+  239  conda activate compseqiii
+  240  jalview primatesAA_muscle.afa
+  241  trimal  -in primatesAA_muscle.afa -out primatesAA_muscle.trim.afa -gappyout
+  242  jalview primatesAA_muscle.afa
+  243* 
+  244* 
+  245  tfm trimal
+  246  tmf trimal
+  247  muscle -align primatesAA.fasta -output primatesAA_muscle.afa
+  248  jalview primatesAA_muscle.afa
+  249  q
+  250  onda activate emboss
+  251  conda activate emboss
+  252  infoseq primatesAA.fasta 
+  253  infoseq primatesAA_muscle.afa 
+  254  conda activate compseqiii 
+  255  jalview primatesAA_muscle.afa
+  256  cd
+  257  cd trim5alpha
+  258  cd
+  259  cd trim5alpha
+  260  wget https://raw.githubusercontent.com/labbces/cen0485/main/files/primatesNuc.fasta
+  261  les primatesNuc.fasta 
+  262  less primatesNuc.fasta 
+  263  less primatesAA_muscle.trim.afa 
+  264  conda activate compseqiii 
+  265  cd
+  266  mkdir trim5alpha
+  267  cd trim5alpha
+  268  wget https://raw.githubusercontent.com/labbces/cen0485/main/files/primatesAA.fasta
+  269  jalview -input sequences.fasta
+  270  muscle -align primatesNUC.fasta -output primatesNUC_muscle.afa
+  271  conda activate compseqiii 
+  272  muscle -align primatesNUC.fasta -output primatesNUC_muscle.afa
+  273  muscle -align primatesNuc.fasta -output primates_muscle.afa
+  274  jalview -input sequences.fasta
+  275  cd
+  276  cd trim5alpha
+  277  wget https://raw.githubusercontent.com/labbces/cen0485/main/files/primatesNuc.fasta
+  278  trimal  -in primatesAA_muscle.afa -out primatesAA_muscle.trim.nuc.afa -gappyout -backtrans primatesNuc.fasta
+  279  cd
+  280  cd trim5alpha
+  281  muscle -align primatesNuc.fasta -output primatesNuc_muscle.afa
+  282  history 
